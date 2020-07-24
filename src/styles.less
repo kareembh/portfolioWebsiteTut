@@ -1,6 +1,69 @@
-@primary-color: white;
-@bg: black;
-h1 {
-  color: @primary-color;
-  background-color: @bg;
+
+// imported fonts
+@import (css) url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import (css) url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
+
+// text color settings
+@main-text:black;
+@secondary-text:#4b5156;
+
+// theme color settings
+@main-color:#eaeaea;
+@secondary-color:#fff;
+
+// border color settings
+@boarder-color:#c1c1c1;
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+  color:@main-text;
+  font-family: 'Russo One', sans-serif;
+}
+
+p, li, span, label, input, textarea{
+  color:@secondary-text;
+  font-family: 'Roboto Mono', monospace;
+}
+
+a{
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul{
+  list-style: none;
+}
+
+h1{font-size: 56px;}
+h2{font-size: 36px;}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+h5{font-size: 20px;}
+h6{font-size: 16px;}
+
+.s1{
+  background-color: @main-color;
+  border-bottom: 1px solid @boarder-color;
+  overflow: auto;
+}
+
+.s2{
+  background-color: @secondary-color;
+  border-bottom: 1px solid @boarder-color;
+  overflow: auto;
+}
+
+.main-container{
+  width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px){
+  .main-container{
+    width: 95%;
+  }
 }
